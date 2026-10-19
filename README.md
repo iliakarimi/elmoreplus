@@ -1,5 +1,7 @@
 # elmoreplus.github.io
 
+> This project's not Complete yet. It's complete in maybe 2 days.
+
 <p align="center">
     <img src="project-assets/preview.png" width="1000">
 </p>
