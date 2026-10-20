@@ -1,4 +1,4 @@
-# elmoreplus.github.io
+# elmoreplus
 
 > This project's not Complete yet. It's complete in maybe 2 days.
 
