@@ -11,4 +11,4 @@ This is Unofficial and fun project of Elmoreplus from The Amazing World of Gumba
 
 <br>
 
-#### This Project made completely with Claude. because I'm not Web Developer.
+#### This Project made completely with Claude. because I'm not Web Developer. And this project is my first and last fully AI generated code.
