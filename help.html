@@ -21,7 +21,12 @@ nav{display:flex;gap:8px;margin-left:8px}
 nav a{display:block;text-decoration:none;font:700 13px "Trebuchet MS",Verdana,sans-serif;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);padding:10px 16px}
 nav a:hover{background:rgba(255,255,255,.15)}
 nav a.on{background:var(--act);box-shadow:inset 0 0 0 1px #6aa5ec}
-.srch{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);font-weight:700}
+.mail{margin-left:auto;display:flex;align-items:center;justify-content:center;width:46px;height:46px;text-decoration:none}
+.mail:hover{background:rgba(255,255,255,.15)}
+.mail svg{display:block;width:28px;height:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4))}
+.mail.on{background:var(--act);box-shadow:inset 0 0 0 1px #6aa5ec}
+.mail:focus-visible{outline:2px solid #ffd54a;outline-offset:2px}
+.srch{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);font-weight:700}
 .srch input{width:190px;height:28px;border:0;border-radius:0;padding:0 12px;background:#f4f8ff;font-size:13px;outline:0}
 .srch input:focus{box-shadow:0 0 0 2px #ffd54a}
 .body{display:grid;grid-template-columns:180px 1fr;flex:1}
@@ -59,6 +64,7 @@ summary:focus-visible,nav a:focus-visible,.logo:focus-visible{outline:2px solid 
       <nav>
         <a href="home.html">HOME</a><a href="account.html">MY ACCOUNT</a><a href="friends.html">FRIENDS</a><a href="#" class="on" aria-current="page">HELP</a>
       </nav>
+      <a class="mail" href="messages.html" aria-label="Messages" title="Messages"><svg viewBox="0 0 28 22" aria-hidden="true"><rect x="2" y="2" width="24" height="18" rx="2" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M3 4l11 9 11-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/></svg></a>
       <label class="srch">SEARCH <input id="q" type="search" autocomplete="off" aria-label="Search help topics"></label>
     </header>
     <div class="body">

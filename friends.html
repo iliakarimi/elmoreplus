@@ -23,20 +23,51 @@ nav{display:flex;gap:8px;margin-left:8px}
 nav a{display:block;text-decoration:none;font:700 13px "Trebuchet MS",Verdana,sans-serif;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);background:none;border:0;padding:10px 16px;border-radius:0;cursor:pointer}
 nav a:hover{background:rgba(255,255,255,.15)}
 nav a.on{background:var(--act);box-shadow:inset 0 0 0 1px #6aa5ec}
-.srch{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);font-weight:700}
+.mail{margin-left:auto;display:flex;align-items:center;justify-content:center;width:46px;height:46px;text-decoration:none}
+.mail:hover{background:rgba(255,255,255,.15)}
+.mail svg{display:block;width:28px;height:22px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4))}
+.mail.on{background:var(--act);box-shadow:inset 0 0 0 1px #6aa5ec}
+.mail:focus-visible{outline:2px solid #ffd54a;outline-offset:2px}
+.srch{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:1px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4);font-weight:700}
 .srch input{width:190px;height:28px;border:0;border-radius:0;padding:0 12px;background:#f4f8ff;font-size:13px;outline:0}
 .srch input:focus{box-shadow:0 0 0 2px #ffd54a}
-.body{display:grid;grid-template-columns:180px 1fr;flex:1}
+.body{display:grid;grid-template-columns:210px minmax(0,1fr) 280px;flex:1}
 .side{border-right:2px solid var(--line);padding:10px 12px;display:flex;flex-direction:column;gap:10px;align-items:center}
-.pname{font-size:8px;font-weight:700;color:#7a7e88;letter-spacing:.4px;align-self:flex-start;word-break:break-all}
-.big{display:flex;width:100%;gap:3px;background:#a9c8ee;border:2px solid #4a8fd8;border-radius:6px;padding:3px;text-decoration:none}
+.pname{font:700 15px "Trebuchet MS",Verdana,sans-serif;letter-spacing:.5px;color:#2e7bd0;align-self:flex-start;overflow-wrap:anywhere}
+.big{display:flex;width:100%;gap:3px;background:linear-gradient(#dbeeff,#a9d0f5);border:2px solid #4a8fd8;border-radius:10px;padding:6px;text-decoration:none}
 .big:hover,.big:focus-visible{box-shadow:0 0 0 2px #ffd54a;outline:0}
 .big svg{width:50%;border-radius:4px}
-.tags{display:flex;justify-content:space-between;width:100%;font-size:6.5px;color:#8a8e98;font-weight:700}
-.fbtn{font:700 7px "Trebuchet MS",sans-serif;letter-spacing:1px;color:#fff;background:#2a6fcf;border:0;padding:2px 8px;border-radius:2px;cursor:pointer}
-.fr{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;cursor:pointer;font:700 9px "Trebuchet MS",sans-serif;color:#8a8e98;padding:0}
+.cap{align-self:flex-start;font:700 9px "Trebuchet MS",sans-serif;letter-spacing:.3px;color:#9aa0aa}
+.cap a{margin-left:6px;color:#4a8fd8;text-decoration:none}
+.msg{align-self:flex-start;padding:6px 12px;background:#d4ecf8;border:2px solid #6aaee0;border-radius:3px;color:#2e7bd0;font:700 13px "Trebuchet MS",Verdana,sans-serif;text-decoration:none}
+.sec{align-self:stretch;margin-top:8px}
+.sech{display:flex;align-items:center;gap:8px;font:700 14px "Trebuchet MS",Verdana,sans-serif;color:#2e7bd0}
+.sech .ic{width:32px;height:28px;flex:none}
+.thumbs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0 2px}
+.th{display:block;position:relative;aspect-ratio:4/3;border:1px solid #8aa0b8;overflow:hidden;background:#fff}
+.th svg{display:block;width:100%;height:100%}
+.vid{width:100%;margin-top:8px}
+.play{position:absolute;inset:0;margin:auto;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.45)}
+.play::after{content:"";position:absolute;left:11px;top:8px;border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.more2{display:block;text-align:right;font-size:9px;color:#4a8fd8;text-decoration:none}
+.right{padding:12px 14px;min-width:0}
+.fh{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 10px;padding-bottom:2px;border-bottom:3px solid #4a8fd8;font:700 24px "Trebuchet MS",Verdana,sans-serif;color:#2e7bd0}
+.fh span{font-size:15px}
+.fbox{background:#c9f0f2;border:2px solid #5fb0e0;border-radius:12px;padding:10px 12px}
+.fbh{display:flex;justify-content:space-between;align-items:baseline;font:700 16px "Trebuchet MS",Verdana,sans-serif;color:#2e7bd0}
+.fbh span{font-size:11px}
+.fcount{margin:4px 0 6px;font:700 12px "Trebuchet MS",Verdana,sans-serif;color:#86bddd}
+.fcount b{font-size:15px}
+.fgrid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 12px}
+.fgrid .fr{font-size:11px}
+.fgrid .fr .av{width:62px;height:62px}
+.inv{display:block;font:700 12px "Trebuchet MS",Verdana,sans-serif;color:#1c4f9c}
+.inv input{display:block;width:100%;height:30px;margin-top:6px;padding:0 10px;border:2px solid #4a8fd8;border-radius:6px;background:#fff;font:13px "Trebuchet MS",Verdana,sans-serif}
+.inv input:focus{outline:0;box-shadow:0 0 0 2px #ffd54a}
+.fr{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;font:700 9px "Trebuchet MS",sans-serif;color:#8a8e98;padding:0}
 .fr .av{width:76px;height:76px;border:2px solid #4a8fd8;border-radius:4px}
-.fr.sel .av{box-shadow:0 0 0 2px #ffd54a}
+.fr:hover .av,.fr:focus-visible .av{box-shadow:0 0 0 2px #ffd54a}
+.fr:focus-visible{outline:0}
 .av{display:block;overflow:hidden;background:#fff}.av svg{display:block;width:100%;height:100%}
 .main{padding:12px 20px 18px;min-width:0;max-width:980px}
 .row{display:grid;grid-template-columns:76px 1fr 150px;gap:16px;align-items:center;margin-bottom:18px}
@@ -44,6 +75,60 @@ nav a.on{background:var(--act);box-shadow:inset 0 0 0 1px #6aa5ec}
 .bub{background:var(--gray);border-radius:10px;padding:12px 13px;box-shadow:inset 0 1px 0 #d6d8de,0 1px 2px rgba(0,0,0,.2)}
 .bub div{background:#fff;border:1px solid #a4a8b1;border-radius:6px;padding:12px 14px;font-size:15px;color:var(--ink);overflow-wrap:anywhere}
 .mid{min-width:0}
+.un{display:inline-block;margin:0 0 4px 2px;font:700 13px "Trebuchet MS",Verdana,sans-serif;color:var(--act);text-decoration:none}
+.un:hover{text-decoration:underline}
+.attach{position:relative;display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:2px solid #1c5bbd;background:#fff;color:var(--act);font:700 11px "Trebuchet MS",sans-serif;letter-spacing:1px;cursor:pointer}
+.attach:focus-within{outline:2px solid #ffd54a;outline-offset:2px}
+.vh{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+.pnm{font-size:12px;color:var(--ink);overflow-wrap:anywhere}
+.pbtn{min-height:40px;padding:0 22px;border:0;background:#2a6fcf;color:#fff;font:700 11px "Trebuchet MS",sans-serif;letter-spacing:1px;cursor:pointer}
+.pprev{display:block;max-width:220px;max-height:160px;margin:0 14px 14px;border:3px solid #55595f;border-radius:6px}
+body.lock{overflow:hidden}
+.fab{position:fixed;right:max(22px,env(safe-area-inset-right,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:20;width:62px;height:62px;display:grid;place-items:center;padding:0;background:var(--bar-fill);border:0;border-top:5px solid var(--bar-edge);border-bottom:5px solid var(--bar-edge);border-radius:0;box-shadow:0 4px 14px rgba(0,0,0,.35);cursor:pointer}
+.fab:hover{background:#5d96c1}
+.fab svg{width:28px;height:28px;fill:#fff;filter:drop-shadow(0 1px 1px rgba(0,0,0,.4))}
+.modal{position:fixed;inset:0;z-index:40;display:flex;align-items:flex-start;justify-content:center;padding:8vh 14px 14px;background:rgba(20,40,70,.55)}
+.modal[hidden]{display:none}
+.mbox{width:min(100%,560px);background:#fff;border-top:6px solid var(--bar-edge);border-bottom:6px solid var(--bar-edge);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.mtop{display:flex;align-items:center;justify-content:space-between;padding:4px 4px 4px 16px;background:var(--bar-fill);color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.mtop h2{margin:0;font:700 13px "Trebuchet MS",Verdana,sans-serif;letter-spacing:1.5px}
+.mx{width:44px;height:44px;border:0;background:none;color:#fff;font-size:28px;line-height:1;cursor:pointer}
+.mx:hover{background:rgba(255,255,255,.2)}
+.mrow{display:flex;gap:12px;padding:14px}
+.mav{width:48px;height:48px;flex:none;border:2px solid #4a8fd8;border-radius:4px}
+.mbox textarea{flex:1;min-width:0;min-height:120px;padding:4px 0;border:0;outline:0;resize:none;font:17px "Trebuchet MS",Verdana,sans-serif;color:var(--ink)}
+.mfoot{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:10px 14px 14px;border-top:1px solid var(--line)}
+.cnt{margin-left:auto;font-size:12px;color:#8a8e98}
+.row .bub{cursor:pointer}
+.row:hover .bub{box-shadow:inset 0 1px 0 #d6d8de,0 0 0 2px #ffd54a}
+.bub:focus-visible{outline:2px solid #ffd54a;outline-offset:2px}
+.back{display:inline-block;margin:0 0 12px;font:700 12px "Trebuchet MS",Verdana,sans-serif;color:var(--act);text-decoration:none}
+.back:hover{text-decoration:underline}
+.dtop{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.media{flex:0 1 auto;min-width:0;display:flex;gap:14px;background:#1d1d1d;border:3px solid #3f7fd8;border-radius:16px;padding:12px 14px 8px}
+.media figure{flex:0 1 300px;margin:0;text-align:center;min-width:0}
+.media img{display:block;width:100%;height:auto;border:3px solid #55595f;border-radius:6px}
+.media figcaption{margin-top:6px;color:#fff;font:700 14px "Trebuchet MS",Verdana,sans-serif}
+.who{display:flex;flex-direction:column;align-items:center;gap:6px;width:150px}
+.who .pic{width:112px;height:112px;border:3px solid #4a8fd8;border-radius:6px}
+.un2{font:700 15px "Trebuchet MS",Verdana,sans-serif;color:var(--act);text-decoration:none}
+.more{font-size:10px;color:#778;text-decoration:underline}
+.dmid{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:16px 0 8px}
+.post{flex:1 1 320px;min-width:0}
+.hd{display:block;margin:0 0 6px 4px;font:700 13px "Trebuchet MS",Verdana,sans-serif;color:#5b5f68}
+.shr{display:flex;align-items:center;gap:14px}
+.share{width:220px;background:#a9d58d;border:1px solid #8cb872;border-radius:6px;padding:6px 8px}
+.share label{display:block;font:700 8px "Trebuchet MS",sans-serif;letter-spacing:1px;color:#5f8f49}
+.share input{display:block;width:100%;height:20px;margin-top:3px;border:1px solid #8cb872;background:#fff}
+.thumb{width:48px;height:48px;padding:0;background:none;border:0;cursor:pointer}
+.thumb svg{width:100%;height:100%;fill:none;stroke:var(--like);stroke-width:1.6}
+.thumb.on svg{fill:var(--like)}
+.cbox{max-width:620px;background:#c4cacc;margin-top:12px}
+.cbox .hd{font-weight:400;color:#8b9097}
+.cbox textarea{display:block;width:100%;height:110px;padding:10px 12px;border:1px solid #a4a8b1;border-radius:6px;background:#fff;font:14px "Trebuchet MS",Verdana,sans-serif;color:var(--ink);resize:vertical}
+.send{margin-top:8px;padding:8px 18px;border:0;background:#2a6fcf;color:#fff;font:700 11px "Trebuchet MS",sans-serif;letter-spacing:1px;cursor:pointer}
+.cmt{max-width:620px;margin:8px 0 0 4px;padding:8px 12px;background:#fff;border:1px solid var(--line);font-size:13px;color:var(--ink);overflow-wrap:anywhere}
+.cmt b{margin-right:8px;color:var(--act)}
 .rx{display:flex;align-items:center;padding-left:12px}
 .rx .av{width:44px;height:44px;border:2px solid var(--tan);border-radius:4px;margin-left:-12px}
 .rx .av:first-child{margin-left:0}
@@ -66,7 +151,7 @@ button:focus-visible,summary:focus-visible,nav a:focus-visible,.logo:focus-visib
 @media (max-width:700px){
   .head{gap:10px;margin:28px 10px 24px;min-height:0;padding:0 14px 0 0}.logo{--lh:84px;height:56px}.sfoot{margin:10px}nav{margin-left:0;flex-wrap:wrap}nav a{padding:10px 12px;font-size:12px}.srch{margin-left:0;width:100%}.srch input{flex:1}
   .body{grid-template-columns:1fr}.side{flex-direction:row;flex-wrap:wrap;border-right:0;border-bottom:2px solid var(--line);justify-content:center}
-  .pname,.tags,.big{display:none}.row{grid-template-columns:56px 1fr;gap:10px}.row .av{width:54px;height:54px}.rx{display:none}.fr .av{width:60px;height:60px}}
+  .pname,.big,.cap,.sec{display:none}.row{grid-template-columns:56px 1fr;gap:10px}.row .av{width:54px;height:54px}.rx{display:none}.fr .av{width:60px;height:60px}}
 </style>
 </head>
 <body>
@@ -77,14 +162,24 @@ button:focus-visible,summary:focus-visible,nav a:focus-visible,.logo:focus-visib
       <nav id="nav">
         <a href="home.html">HOME</a><a href="account.html">MY ACCOUNT</a><a href="#" class="on" aria-current="page">FRIENDS</a><a href="help.html">HELP</a>
       </nav>
+      <a class="mail" href="messages.html" aria-label="Messages" title="Messages"><svg viewBox="0 0 28 22" aria-hidden="true"><rect x="2" y="2" width="24" height="18" rx="2" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M3 4l11 9 11-9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/></svg></a>
       <label class="srch">SEARCH <input id="q" type="search" autocomplete="off" aria-label="Search posts"></label>
     </header>
     <div class="body">
       <aside class="side" id="side"></aside>
       <main class="main" id="main"></main>
+      <aside class="right" id="right"></aside>
     </div>
     <footer class="sfoot"><b>ELMOREPLUS</b><span>Made from Elmore by Ilia &amp; Claude</span><span class="note">This project is made with AI because I&rsquo;m not a web developer.</span></footer>
   </div>
+</div>
+<button type="button" class="fab" id="fab" aria-label="New post"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3h3v7.5H21v3h-7.5V21h-3v-7.5H3v-3h7.5z"/></svg></button>
+<div class="modal" id="modal" hidden>
+  <form class="mbox" id="cf" role="dialog" aria-modal="true" aria-labelledby="mt">
+    <div class="mtop"><h2 id="mt">NEW POST</h2><button type="button" class="mx" id="mclose" aria-label="Close">&times;</button></div>
+    <div class="mrow"><span class="av mav" id="mav"></span><textarea id="np" maxlength="200" placeholder="What&rsquo;s happening?" aria-label="Post text"></textarea></div>
+    <div class="mfoot"><label class="attach">ATTACH PHOTO<input type="file" id="npf" class="vh" accept="image/*"></label><span class="pnm" id="pnm" role="status"></span><span class="cnt" id="cnt">0/200</span><button class="pbtn">POST</button></div>
+  </form>
 </div>
 <script>
 const $=s=>document.querySelector(s);
@@ -101,6 +196,7 @@ const F=[
 const ME={id:'me',c:['#d8e8ff','#2a74d6'],k:0};
 const who=id=>id==='me'?ME:F.find(x=>x.id===id);
 const nm=id=>id==='me'?'you':id[0].toUpperCase()+id.slice(1);
+const au=id=>id==='me'?'You':nm(id),auH=id=>id==='me'?'account.html':'account.html?user='+id;
 const thumb=`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>`;
 const TB=thumb.replace('<svg','<svg class="tb"');
 let N=7;
@@ -112,21 +208,40 @@ const P=[
  {id:5,f:'wilson',t:'Practising my thank-you speech for the fridge light.',l:['leslie','penny']},
  {id:6,f:'leslie',t:'Big news: I finally learned how the volume knob works.',l:['penny']},
  {id:7,f:'penny',t:'Rainy day, soup weather, zero regrets.',l:['wilson']}];
-const S={view:'friends',q:'',only:null,open:new Set(),name:'GUMBALL&DARWIN'};
+const S={view:'friends',q:'',draft:'',post:null,compose:false,pic:null,open:new Set(),name:'GUMBALL&DARWIN'};
 const save=()=>{try{localStorage.setItem('elmoreplus-v2',JSON.stringify({P,N,name:S.name}))}catch(e){}};
 try{const d=JSON.parse(localStorage.getItem('elmoreplus-v2')||'null');if(d&&Array.isArray(d.P)){P.splice(0,P.length,...d.P);N=d.N||N;S.name=d.name||S.name}}catch(e){}
-P.forEach(p=>{if(!p.l.length)p.l.push(F.find(f=>f.id!==p.f).id)});
+const SVGI=s=>'data:image/svg+xml,'+encodeURIComponent(s);
+const MEDIA={
+ 2:[{src:SVGI(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 120'><rect width='160' height='120' fill='#ffe9c7'/><ellipse cx='80' cy='106' rx='58' ry='8' fill='#d9c3a0'/><rect x='38' y='88' width='84' height='14' rx='6' fill='#e0a55a'/><path d='M36 86q10-8 20 0t20 0t20 0t20 0t12 0v6H36z' fill='#6bbf59'/><rect x='40' y='74' width='80' height='10' rx='3' fill='#f2c94c'/><rect x='42' y='62' width='76' height='10' rx='5' fill='#e4572e'/><path d='M36 54q10-8 20 0t20 0t20 0t20 0t12 0v6H36z' fill='#6bbf59'/><rect x='40' y='42' width='80' height='10' rx='3' fill='#f2c94c'/><path d='M38 42q0-26 42-26t42 26z' fill='#e0a55a'/><circle cx='64' cy='28' r='2' fill='#f7dba7'/><circle cx='84' cy='24' r='2' fill='#f7dba7'/><circle cx='100' cy='30' r='2' fill='#f7dba7'/></svg>`)}],
+ 6:[{src:SVGI(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 120'><rect width='160' height='120' fill='#dfe9f5'/><rect x='20' y='14' width='120' height='92' rx='10' fill='#4b5563'/><circle cx='80' cy='60' r='30' fill='#e5e7eb' stroke='#9ca3af' stroke-width='3'/><rect x='77' y='34' width='6' height='22' rx='3' fill='#ef4444'/><path d='M36 94l8-8M124 94l-8-8M30 60h10M120 60h10' stroke='#e5e7eb' stroke-width='3' stroke-linecap='round'/></svg>`)}]};
+P.forEach(p=>{if(!p.l.length)p.l.push(F.find(f=>f.id!==p.f).id);if(p.f==='leslie'&&MEDIA[p.id])p.m=MEDIA[p.id]});
 
+const scene=i=>{const h=(i*67+190)%360;return `<svg viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="80" height="60" fill="hsl(${h} 65% 78%)"/><circle cx="${18+i*12}" cy="16" r="8" fill="#fff" opacity=".8"/><path d="M0 48q18-20 36-4t44-10v26H0z" fill="hsl(${(h+40)%360} 45% 48%)"/><path d="M0 54q24-12 44-2t36-6v14H0z" fill="hsl(${(h+80)%360} 40% 36%)"/></svg>`};
+const ICAM=`<svg class="ic" viewBox="0 0 32 28" aria-hidden="true"><rect x="2" y="6" width="28" height="20" rx="3" fill="#7fd6c9" stroke="#2a74d6" stroke-width="2"/><circle cx="16" cy="16" r="6" fill="#fff" stroke="#2a74d6" stroke-width="2"/><rect x="9" y="2" width="8" height="5" fill="#2a74d6"/></svg>`;
+const IVID=`<svg class="ic" viewBox="0 0 32 28" aria-hidden="true"><rect x="2" y="9" width="20" height="16" rx="3" fill="#7fd6c9" stroke="#2a74d6" stroke-width="2"/><path d="M22 15l8-4v14l-8-4z" fill="#2a74d6"/><circle cx="8" cy="6" r="3.5" fill="#2a74d6"/><circle cx="17" cy="6" r="3.5" fill="#2a74d6"/></svg>`;
 function side(){
   $('#side').innerHTML=`<div class="pname">${esc(S.name)}</div>
   <a class="big" href="account.html" aria-label="Open your profile and dashboard"><span class="av" style="width:50%">${av(ME.c,0)}</span><span class="av" style="width:50%">${av(['#ffe2c2','#e58a3c'],4)}</span></a>
-  <div class="tags"><span>PHOTO&amp;PICTURE</span><span>GROUPS</span></div>
-  <button class="fbtn" data-f="">FRIEND</button>
-  ${F.map(f=>`<button class="fr${S.only===f.id?' sel':''}" data-f="${f.id}"><span class="av">${av(f.c,f.k)}</span>${nm(f.id)}</button>`).join('')}`;
+  <div class="cap">PROFILE PICTURE <a href="account.html">- MODIFY</a></div>
+  <a class="msg" href="messages.html">Messages (0)</a>
+  <div class="sec"><a class="sech" href="photos.html">${ICAM}PHOTOS</a>
+    <div class="thumbs">${[0,1,2,3].map(i=>`<a class="th" href="photos.html" aria-label="Photo ${i+1}">${scene(i)}</a>`).join('')}</div>
+    <a class="more2" href="photos.html">see more</a></div>
+  <div class="sec"><a class="sech" href="videos.html">${IVID}VIDEOS</a>
+    <a class="th vid" href="videos.html" aria-label="Video 1">${scene(4)}<span class="play"></span></a></div>`;
 }
-function likes(p){
+function right(){
+  const n=F.length;
+  $('#right').innerHTML=`<h2 class="fh">FRIENDS<span>(${n})</span></h2>
+  <div class="fbox"><div class="fbh">Friends<span>(${n})</span></div>
+    <p class="fcount">You have <b>${n}</b> friend${n===1?'':'s'} !!</p>
+    <div class="fgrid">${F.map(f=>`<a class="fr" href="account.html?user=${f.id}" aria-label="${nm(f.id)}’s profile"><span class="av">${av(f.c,f.k)}</span>${nm(f.id)}</a>`).join('')}</div>
+    <label class="inv">SEND AN INVITATION<input type="text" autocomplete="off" aria-label="Send an invitation"></label></div>`;
+}
+function likes(p,big){
   const n=p.l.length,on=p.l.includes('me');
-  const bt=`<button class="like${on?' on':''}" data-like="${p.id}" aria-pressed="${on}">${thumb}${on?'Liked':'Like'}</button>`;
+  const bt=big?'':`<button class="like${on?' on':''}" data-like="${p.id}" aria-pressed="${on}">${thumb}${on?'Liked':'Like'}</button>`;
   if(!n)return `<div class="foot">${bt}</div>`;
   const b=i=>`<b>${nm(p.l[i])}</b>`;const t=n===1?b(0):n===2?`${b(0)} and ${b(1)}`:`${b(0)} and <b>${n-1} others</b>`;
   const full=S.open.has(p.id)?`<div class="lkl">${p.l.map(id=>{const w=who(id);return `<span><span class="av">${av(w.c,w.k)}</span>${nm(id)}</span>`}).join('')}</div>`:'';
@@ -134,19 +249,67 @@ function likes(p){
 }
 function feed(){
   const q=S.q.trim().toLowerCase();
-  const l=P.filter(p=>(!S.only||p.f===S.only)&&(!q||p.t.toLowerCase().includes(q)||p.f.includes(q)));
-  return l.length?l.map(p=>{const w=who(p.f);return `<div class="row"><span class="av">${av(w.c,w.k)}</span><div class="mid"><div class="bub"><div>${esc(p.t)}</div></div>${likes(p)}</div><div class="rx">${p.l.slice(0,3).map(id=>{const x=who(id);return `<span class="av">${av(x.c,x.k)}</span>`}).join('')}${p.l.length?TB:''}</div></div>`}).join(''):'<p class="empty">No posts match your search.</p>';
+  const l=P.filter(p=>(!q||p.t.toLowerCase().includes(q)||p.f.includes(q)));
+  return l.length?l.map(p=>{const w=who(p.f);return `<div class="row" data-id="${p.id}"><span class="av">${av(w.c,w.k)}</span><div class="mid"><a class="un" href="${auH(p.f)}">${au(p.f)}</a><div class="bub" tabindex="0" role="link" aria-label="Open post" data-open="${p.id}"><div>${esc(p.t)}</div></div>${likes(p)}</div><div class="rx">${p.l.slice(0,3).map(id=>{const x=who(id);return `<span class="av">${av(x.c,x.k)}</span>`}).join('')}${p.l.length?TB:''}</div></div>`}).join(''):'<p class="empty">No posts match your search.</p>';
 }
-const rf=()=>{const f=$('#feed');if(f)f.innerHTML=feed()};
-function main(){$('#main').innerHTML=`<div id="feed">${feed()}</div>`}
+const media=p=>p.m&&p.m.length?`<div class="media">${p.m.map(x=>`<figure><img src="${esc(x.src)}" alt="${esc(x.cap||'')}">${x.cap?`<figcaption>${esc(x.cap)}</figcaption>`:''}</figure>`).join('')}</div>`:'';
+function detail(p){
+  const w=who(p.f),on=p.l.includes('me'),c=(p.c||[]).map(x=>`<div class="cmt"><b>${esc(x.n)}</b>${esc(x.t)}</div>`).join('');
+  return `<a class="back" href="#">&larr; Back to posts</a>
+  <div class="dtop">${media(p)}
+  <div class="who"><span class="av pic">${av(w.c,w.k)}</span><a class="un2" href="${auH(p.f)}">${au(p.f)}</a><a class="more" href="${auH(p.f)}">click for more infos</a></div></div>
+  <div class="dmid"><div class="bub post"><span class="hd">${au(p.f)} posted :</span><div>${esc(p.t)}</div></div>
+  <div class="shr"><div class="share"><label>SHARE TO<input aria-label="Share to"></label></div><button class="thumb${on?' on':''}" data-like="${p.id}" aria-pressed="${on}" aria-label="Like">${thumb}</button></div></div>
+  ${likes(p,1)}
+  <div class="bub cbox"><span class="hd">add a comment</span><textarea id="cm" aria-label="Add a comment">${esc(S.draft)}</textarea><button class="send" id="send">COMMENT</button></div>${c}`;
+}
+const rf=()=>{const f=$('#feed');if(f)f.innerHTML=feed();else if(S.post)main()};
+function shrink(file,cb){const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,640/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.75))};im.onerror=()=>cb(null);im.src=r.result};r.onerror=()=>cb(null);r.readAsDataURL(file)}
+function main(){const p=S.post&&P.find(x=>x.id===S.post);$('#main').innerHTML=p?detail(p):`<div id="feed">${feed()}</div>`}
+const route=()=>{const m=location.hash.match(/^#post-(\d+)$/);S.post=m?+m[1]:null;main();scrollTo(0,0)};
+addEventListener('hashchange',route);
+const modal=$('#modal');
+function openM(){S.pic=null;$('#mav').innerHTML=av(ME.c,0);$('#np').value='';$('#cnt').textContent='0/200';$('#pnm').textContent='';const pv=$('#pprev');if(pv)pv.remove();modal.hidden=false;document.body.classList.add('lock');$('#np').focus()}
+function closeM(){modal.hidden=true;document.body.classList.remove('lock');if(S.opener&&S.opener.focus)S.opener.focus()}
+const open=id=>{location.hash='post-'+id};
+document.addEventListener('keydown',e=>{
+  if(!modal.hidden){
+    if(e.key==='Escape'){closeM();return}
+    if(e.key==='Tab'){const f=[...modal.querySelectorAll('button,textarea,input')],a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
+    return;
+  }
+  const o=e.target.closest&&e.target.closest('[data-open]');if(o&&e.key==='Enter')open(o.dataset.open);
+});
+document.addEventListener('input',e=>{if(e.target.id==='cm')S.draft=e.target.value;if(e.target.id==='np'){const n=e.target.value.length;$('#cnt').textContent=n+'/200';$('#cnt').style.color=n>=180?'#c0392b':''}});
 document.addEventListener('click',e=>{
+  if(e.target.id==='modal'){closeM();return}
+  const r=e.target.closest('.row');if(r&&!e.target.closest('a,button'))return open(r.dataset.id);
   const t=e.target.closest('button');if(!t)return;
-  if(t.dataset.f!==undefined){S.only=(t.dataset.f&&S.only!==t.dataset.f)?t.dataset.f:null;side();rf()}
-  else if(t.dataset.like){const p=P.find(x=>x.id===+t.dataset.like),k=p.l.indexOf('me');k<0?p.l.unshift('me'):p.l.splice(k,1);if(!p.l.length)p.l.push(F.find(f=>f.id!==p.f).id);save();rf();document.querySelector('[data-like="'+p.id+'"]')?.focus()}
+  if(t.id==='fab'){S.opener=t;openM();return}
+  if(t.id==='mclose'){closeM();return}
+  if(t.id==='send'){const p=P.find(x=>x.id===S.post),v=$('#cm').value.trim();if(p&&v){(p.c=p.c||[]).push({n:'You',t:v});S.draft='';save();main()}return}
+  if(t.dataset.like){const p=P.find(x=>x.id===+t.dataset.like),k=p.l.indexOf('me');k<0?p.l.unshift('me'):p.l.splice(k,1);if(!p.l.length)p.l.push(F.find(f=>f.id!==p.f).id);save();rf();document.querySelector('[data-like="'+p.id+'"]')?.focus()}
   else if(t.dataset.lk){const i=+t.dataset.lk;S.open.has(i)?S.open.delete(i):S.open.add(i);rf();document.querySelector('[data-lk="'+i+'"]')?.focus()}
 });
-$('#q').addEventListener('input',e=>{S.q=e.target.value;rf()});
-side();main();
+document.addEventListener('change',e=>{
+  if(e.target.id!=='npf'||!e.target.files[0])return;
+  shrink(e.target.files[0],d=>{
+    if(!d){$('#pnm').textContent='Could not read that photo.';return}
+    S.pic=d;$('#pnm').textContent='Photo attached';
+    let im=$('#pprev');if(!im){im=document.createElement('img');im.id='pprev';im.className='pprev';im.alt='Attached photo preview';$('#cf').appendChild(im)}
+    im.src=d;
+  });
+});
+document.addEventListener('submit',e=>{
+  if(e.target.id!=='cf')return;e.preventDefault();
+  const v=$('#np').value.trim();if(!v){$('#pnm').textContent='Write something first.';return}
+  const p={id:++N,f:'me',t:v,l:[]};if(S.pic)p.m=[{src:S.pic}];
+  P.unshift(p);S.pic=null;closeM();save();if(S.post)location.hash='';else main();scrollTo(0,0);
+  [...F].sort(()=>Math.random()-.5).slice(0,1+Math.floor(Math.random()*3)).forEach((f,k)=>setTimeout(()=>{p.l.push(f.id);save();rf()},k*2000));
+});
+$('#q').addEventListener('input',e=>{S.q=e.target.value;if(S.post)location.hash='';else rf()});
+side();right();route();
+if(new URLSearchParams(location.search).get('compose')==='1'){S.opener=null;openM()}
 </script>
 </body>
 </html>
